@@ -1,0 +1,28 @@
+﻿<Window x:Class="Exercicio1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:Exercicio1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1080">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel>
+            <ListBox x:Name="TB" Height="400" Width="600" Margin="10" ScrollViewer.CanContentScroll="True">
+
+            </ListBox>
+        </StackPanel>
+        <lvc:PieChart Width="400" RenderTransformOrigin="0.5,0.5" Height="400" VerticalAlignment="Top" x:Name="Grafico" >
+            <lvc:PieChart.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.139"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.855"/>
+                </TransformGroup>
+            </lvc:PieChart.RenderTransform>
+
+        </lvc:PieChart>
+    </StackPanel>
+</Window>
